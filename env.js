@@ -4,7 +4,8 @@
  * @memberof utils
  */
 
-const VERSION = require('root-require')('package.json');
+let VERSION;
+
 
 /**
  * Expose some env helper tools
@@ -53,4 +54,13 @@ export const __VERSION__ = VERSION;
  * @param  {string} env var to get
  * @return {any}     returns variable
  */
-export const getEnv = (env) => process.env[env];
+export const __GET__ = (env) => process.env[env];
+
+/**
+ * Set up the global project path
+ * @method __SET_PROJECT_PATH__
+ * @param  {[type]}             projectPath string path
+ */
+export const __SET_PROJECT_PATH__ = (projectPath) => {
+  VERSION = require('root-require')(projectPath);
+}
