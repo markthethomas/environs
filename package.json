@@ -5,7 +5,8 @@
   "version": "0.2.0",
   "scripts": {
     "semantic-release": "npm publish && semantic-release post",
-    "transpile": "babel ./env.js --babelrc=true --compact='true' --minified --no-comments --out-dir lib"
+    "transpile": "babel ./env.js --babelrc=true --compact='true' --minified --no-comments --out-dir lib",
+    "prepublish": "npm run transpile",
   },
   "repository": {
     "type": "git",
