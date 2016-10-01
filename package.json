@@ -2,11 +2,12 @@
   "name": "environs",
   "description": "Simple tools for determining environment in node",
   "main": "lib/env.js",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "scripts": {
     "semantic-release": "npm publish && semantic-release post",
     "transpile": "babel ./env.js --babelrc=true --compact='true' --minified --no-comments --out-dir lib",
-    "prepublish": "npm run transpile"
+    "prepublish": "npm run transpile",
+    "docs": "jsdoc2md env.js > README.md"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-preset-es2015": "^6.16.0",
+    "jsdoc-to-markdown": "^1.3.7",
     "semantic-release": "^4.3.5"
   }
 }

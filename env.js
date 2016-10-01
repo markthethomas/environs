@@ -59,6 +59,6 @@ export const __GET__ = (env) => process.env[env];
 /**
  * Set up the global project path
  * @method __SET_PROJECT_VERSION__
- * @param  {[type]}             projectPath string path
+ * @param  {string}             version string path
  */
 export const __SET_PROJECT_VERSION__ = (version) => VERSION = version;
