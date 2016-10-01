@@ -1,9 +1,10 @@
 {
-  "name": "env-utils",
+  "name": "environs",
   "description": "Simple tools for determining environment in node",
   "main": "env.js",
+  "version": "0.1.0",
   "scripts": {
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "npm publish && semantic-release post",
     "transpile": "babel ./env.js --babelrc=true --compact='true' --minified --no-comments --out-dir lib"
   },
   "repository": {
@@ -23,9 +24,9 @@
   "author": "Mark Thomas <mark@ifelse.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/markthethomas/env-utils/issues"
+    "url": "https://github.com/markthethomas/environs/issues"
   },
-  "homepage": "https://github.com/markthethomas/env-utils#readme",
+  "homepage": "https://github.com/markthethomas/environs#readme",
   "dependencies": {
     "root-require": "^0.3.1"
   },
