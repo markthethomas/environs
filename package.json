@@ -2,7 +2,7 @@
   "name": "environs",
   "description": "Simple tools for determining environment in node",
   "main": "lib/env.js",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "scripts": {
     "semantic-release": "npm publish && semantic-release post",
     "transpile": "babel ./env.js --babelrc=true --compact='true' --minified --no-comments --out-dir lib",
