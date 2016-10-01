@@ -1,7 +1,7 @@
 {
   "name": "environs",
   "description": "Simple tools for determining environment in node",
-  "main": "env.js",
+  "main": "lib/env.js",
   "version": "0.1.1",
   "scripts": {
     "semantic-release": "npm publish && semantic-release post",
