@@ -6,17 +6,17 @@
 
 let VERSION;
 
-
 /**
  * Expose some env helper tools
  * @type {Object}
  */
 
- /**
+/**
   * Detect release environment
   * @type {String}
   */
-export const __RELEASE__ = process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging';
+export const __RELEASE__ =
+    process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging';
 
 /**
  * Detect production environment
@@ -28,13 +28,17 @@ export const __PRODUCTION__ = process.env.NODE_ENV === 'production';
  * Detect testing environment
  * @type {String}
  */
-export const __TESTING__ = process.env.NODE_ENV === 'testing';
+export const __TESTING__ =
+    process.env.NODE_ENV === 'testing' || process.env.NODE_ENV === 'test';
 
 /**
  * Detect dev environment
  * @type {String}
  */
-export const __CI__ = process.env.CI === 'true' || process.env.CI === true;
+export const __CI__ =
+    process.env.CI === 'true' ||
+    process.env.CI === true ||
+    process.env.CONTINUOUS_INTEGRATION;
 
 /**
  * Detect dev environment
@@ -54,11 +58,11 @@ export const __VERSION__ = VERSION;
  * @param  {string} env var to get
  * @return {any}     returns variable
  */
-export const __GET__ = (env) => process.env[env];
+export const __GET__ = env => process.env[env];
 
 /**
  * Set up the global project path
  * @method __SET_PROJECT_VERSION__
  * @param  {string}             version string path
  */
-export const __SET_PROJECT_VERSION__ = (version) => VERSION = version;
+export const __SET_PROJECT_VERSION__ = version => (VERSION = version);
