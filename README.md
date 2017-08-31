@@ -1,7 +1,8 @@
 <a name="utils.module_env"></a>
 
 ## env
-Helper methods for determining environment.
+Helper methods for determining environment
+
 
 * [env](#utils.module_env)
     * _static_
@@ -20,44 +21,44 @@ Helper methods for determining environment.
 ### env.__RELEASE__ : <code>String</code>
 Detect release environment
 
-**Kind**: static constant of <code>[env](#utils.module_env)</code>  
+**Kind**: static constant of [<code>env</code>](#utils.module_env)
 <a name="utils.module_env.__PRODUCTION__"></a>
 
 ### env.__PRODUCTION__ : <code>String</code>
 Detect production environment
 
-**Kind**: static constant of <code>[env](#utils.module_env)</code>  
+**Kind**: static constant of [<code>env</code>](#utils.module_env)
 <a name="utils.module_env.__TESTING__"></a>
 
 ### env.__TESTING__ : <code>String</code>
 Detect testing environment
 
-**Kind**: static constant of <code>[env](#utils.module_env)</code>  
+**Kind**: static constant of [<code>env</code>](#utils.module_env)
 <a name="utils.module_env.__CI__"></a>
 
 ### env.__CI__ : <code>String</code>
 Detect dev environment
 
-**Kind**: static constant of <code>[env](#utils.module_env)</code>  
+**Kind**: static constant of [<code>env</code>](#utils.module_env)
 <a name="utils.module_env.__DEV__"></a>
 
 ### env.__DEV__ : <code>String</code>
 Detect dev environment
 
-**Kind**: static constant of <code>[env](#utils.module_env)</code>  
+**Kind**: static constant of [<code>env</code>](#utils.module_env)
 <a name="utils.module_env.__VERSION__"></a>
 
 ### env.__VERSION__ : <code>string</code>
 Returns version
 
-**Kind**: static constant of <code>[env](#utils.module_env)</code>  
+**Kind**: static constant of [<code>env</code>](#utils.module_env)
 <a name="utils.module_env..getEnv"></a>
 
 ### env~getEnv(env) ⇒ <code>any</code>
 Get an environment variable
 
-**Kind**: inner method of <code>[env](#utils.module_env)</code>  
-**Returns**: <code>any</code> - returns variable  
+**Kind**: inner method of [<code>env</code>](#utils.module_env)
+**Returns**: <code>any</code> - returns variable
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -68,7 +69,7 @@ Get an environment variable
 ### env~__SET_PROJECT_VERSION__(version)
 Set up the global project path
 
-**Kind**: inner method of <code>[env](#utils.module_env)</code>  
+**Kind**: inner method of [<code>env</code>](#utils.module_env)
 
 | Param | Type | Description |
 | --- | --- | --- |
