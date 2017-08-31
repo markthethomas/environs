@@ -1,76 +1,77 @@
-<a name="utils.module_env"></a>
+<a name="utils.module_environs"></a>
 
-## env
+## environs
 Helper methods for determining environment
 
 
-* [env](#utils.module_env)
+* [environs](#utils.module_environs)
     * _static_
-        * [.__RELEASE__](#utils.module_env.__RELEASE__) : <code>String</code>
-        * [.__PRODUCTION__](#utils.module_env.__PRODUCTION__) : <code>String</code>
-        * [.__TESTING__](#utils.module_env.__TESTING__) : <code>String</code>
-        * [.__CI__](#utils.module_env.__CI__) : <code>String</code>
-        * [.__DEV__](#utils.module_env.__DEV__) : <code>String</code>
-        * [.__VERSION__](#utils.module_env.__VERSION__) : <code>string</code>
+        * [.__RELEASE__](#utils.module_environs.__RELEASE__) : <code>String</code>
+        * [.__PRODUCTION__](#utils.module_environs.__PRODUCTION__) : <code>String</code>
+        * [.__TESTING__](#utils.module_environs.__TESTING__) : <code>String</code>
+        * [.__CI__](#utils.module_environs.__CI__) : <code>String</code>
+        * [.__DEV__](#utils.module_environs.__DEV__) : <code>String</code>
+        * [.__VERSION__](#utils.module_environs.__VERSION__) : <code>string</code>
     * _inner_
-        * [~getEnv(env)](#utils.module_env..getEnv) ⇒ <code>any</code>
-        * [~__SET_PROJECT_VERSION__(version)](#utils.module_env..__SET_PROJECT_VERSION__)
+        * [~getEnv(env)](#utils.module_environs..getEnv) ⇒ <code>any</code>
+        * [~__SET_PROJECT_VERSION__(version)](#utils.module_environs..__SET_PROJECT_VERSION__)
 
-<a name="utils.module_env.__RELEASE__"></a>
+<a name="utils.module_environs.__RELEASE__"></a>
 
-### env.__RELEASE__ : <code>String</code>
+### environs.__RELEASE__ : <code>String</code>
 Detect release environment
 
-**Kind**: static constant of [<code>env</code>](#utils.module_env)
-<a name="utils.module_env.__PRODUCTION__"></a>
+**Kind**: static constant of [<code>environs</code>](#utils.module_environs)  
+<a name="utils.module_environs.__PRODUCTION__"></a>
 
-### env.__PRODUCTION__ : <code>String</code>
+### environs.__PRODUCTION__ : <code>String</code>
 Detect production environment
 
-**Kind**: static constant of [<code>env</code>](#utils.module_env)
-<a name="utils.module_env.__TESTING__"></a>
+**Kind**: static constant of [<code>environs</code>](#utils.module_environs)  
+<a name="utils.module_environs.__TESTING__"></a>
 
-### env.__TESTING__ : <code>String</code>
+### environs.__TESTING__ : <code>String</code>
 Detect testing environment
 
-**Kind**: static constant of [<code>env</code>](#utils.module_env)
-<a name="utils.module_env.__CI__"></a>
+**Kind**: static constant of [<code>environs</code>](#utils.module_environs)  
+<a name="utils.module_environs.__CI__"></a>
 
-### env.__CI__ : <code>String</code>
+### environs.__CI__ : <code>String</code>
 Detect dev environment
 
-**Kind**: static constant of [<code>env</code>](#utils.module_env)
-<a name="utils.module_env.__DEV__"></a>
+**Kind**: static constant of [<code>environs</code>](#utils.module_environs)  
+<a name="utils.module_environs.__DEV__"></a>
 
-### env.__DEV__ : <code>String</code>
+### environs.__DEV__ : <code>String</code>
 Detect dev environment
 
-**Kind**: static constant of [<code>env</code>](#utils.module_env)
-<a name="utils.module_env.__VERSION__"></a>
+**Kind**: static constant of [<code>environs</code>](#utils.module_environs)  
+<a name="utils.module_environs.__VERSION__"></a>
 
-### env.__VERSION__ : <code>string</code>
+### environs.__VERSION__ : <code>string</code>
 Returns version
 
-**Kind**: static constant of [<code>env</code>](#utils.module_env)
-<a name="utils.module_env..getEnv"></a>
+**Kind**: static constant of [<code>environs</code>](#utils.module_environs)  
+<a name="utils.module_environs..getEnv"></a>
 
-### env~getEnv(env) ⇒ <code>any</code>
+### environs~getEnv(env) ⇒ <code>any</code>
 Get an environment variable
 
-**Kind**: inner method of [<code>env</code>](#utils.module_env)
-**Returns**: <code>any</code> - returns variable
+**Kind**: inner method of [<code>environs</code>](#utils.module_environs)  
+**Returns**: <code>any</code> - returns variable  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | env | <code>string</code> | var to get |
 
-<a name="utils.module_env..__SET_PROJECT_VERSION__"></a>
+<a name="utils.module_environs..__SET_PROJECT_VERSION__"></a>
 
-### env~__SET_PROJECT_VERSION__(version)
+### environs~__SET_PROJECT_VERSION__(version)
 Set up the global project path
 
-**Kind**: inner method of [<code>env</code>](#utils.module_env)
+**Kind**: inner method of [<code>environs</code>](#utils.module_environs)  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | version | <code>string</code> | string path |
+

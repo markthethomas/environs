@@ -1,6 +1,6 @@
 /**
  * Helper methods for determining environment
- * @module env
+ * @module environs
  * @memberof utils
  */
 
